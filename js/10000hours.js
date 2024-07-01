@@ -62,6 +62,12 @@ const getInputValue = () => {
       domainTag.classList.remove("flex-col");
     }
   } else {
+    alert("분야, 시간을 입력해주세요.");
+    if (domainVal.trim() === "") {
+      domain.focus();
+    } else {
+      time.focus();
+    }
     domainField.textContent = "프로그래밍";
     timeField.textContent = "5110";
   }
