@@ -252,7 +252,8 @@ br.mobile {
 .modal {
   display: none;
   width: 800px;
-  height: 800px;
+  max-height: 800px;
+  height: calc(100vh - 100px);
   padding: 76px 0 68px 0;
   text-align: center;
   position: fixed;
@@ -389,7 +390,7 @@ br.mobile {
   }
   .modal {
     width: 330px;
-    height: 500px;
+    max-height: 500px;
     padding: 40px 0;
   }
   .modal p.top-text {
