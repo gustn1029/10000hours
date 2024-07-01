@@ -179,6 +179,10 @@ br.mobile {
   border-radius: 7px;
 }
 
+.section02 p input:focus {
+  background-color: #fff;
+}
+
 .section02 p:nth-of-type(n + 2) {
   margin-top: 27px;
 }
@@ -297,7 +301,8 @@ br.mobile {
   text-align: center;
 }
 
-#footer h1 {
+#footer strong {
+  display: block;
   width: 125px;
   height: 25px;
   margin: 0 auto 20px;
@@ -421,7 +426,7 @@ br.mobile {
     gap: 10px;
   }
 
-  #footer h1 {
+  #footer strong {
     width: 91px;
     height: 18px;
     margin-bottom: 17px;
