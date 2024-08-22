@@ -331,7 +331,7 @@ br.mobile {
   html {
     font-size: 14px;
   }
-  .wrap {
+  #root {
     padding: 120px 14px 70px;
     gap: 62px;
     letter-spacing: -0.01em;
