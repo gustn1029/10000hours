@@ -5,7 +5,7 @@ export default function Info({domain, time}) {
     <section className="section03">
         <h2 className="hidden">1만 시간의 법칙 계산 결과</h2>
         <p className="">
-          당신은<em className="domain-field">{domain}</em>전문가가 되기
+          당신은<em className={`domain-field ${domain.length > 5 ? "flex-col": ""}`}>{domain}</em>전문가가 되기
           위해서
         </p>
         <p>
