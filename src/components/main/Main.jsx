@@ -6,10 +6,7 @@ import MasteryForm from "./MasteryForm";
 import ActionButtons from "./ActionButtons";
 
 export default function Main() {
-  const [data, setData] = useState({
-    domain: "프로그래밍",
-    time: 5110,
-  });
+  const [data, setData] = useState({});
   const [isModal, setIsModal] = useState(false);
 
   const modalBtnClickHandler = () => {
@@ -24,8 +21,12 @@ export default function Main() {
     <>
       <MainIntro />
       <MasteryForm setData={setData} />
-      <Info domain={data.domain} time={data.time} />
-      <ActionButtons modalBtnClickHandler={modalBtnClickHandler} />
+      {(data.domain && data.time) && (
+        <>
+          <Info domain={data.domain} time={data.time} />
+          <ActionButtons modalBtnClickHandler={modalBtnClickHandler} />
+        </>
+      )}
       {isModal ? <Modal clickEvent={modalCloseHandler} /> : null}
     </>
   );
